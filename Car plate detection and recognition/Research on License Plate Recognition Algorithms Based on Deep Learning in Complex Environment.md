@@ -18,7 +18,7 @@ WANG WEIHONG1 AND TU JIAOYANG （School of Computing, Zhejiang University of Tec
 
    - solutions:
 
-   - ![image-20230205132422027](image\image-20230205132422027.png)
+   - ![image-20230205132422027](.\image\image-20230205132422027.png)
 
 2. 图像噪音（image with noise）
 
@@ -26,7 +26,7 @@ WANG WEIHONG1 AND TU JIAOYANG （School of Computing, Zhejiang University of Tec
      The sources of noise in the image may come from various ways such as image acquisition, transmission and compression, and the types of noise can also be divided into pepper and salt noise, gaussian noise and so on.
      ```
 
-   - ![image-20230205132515146](image\image-20230205132515146.png)
+   - ![image-20230205132515146](.\image\image-20230205132515146.png)
 
 3. 字符模糊（fuzzy license）
 
