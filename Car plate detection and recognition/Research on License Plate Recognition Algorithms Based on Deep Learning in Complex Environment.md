@@ -67,6 +67,6 @@ WANG WEIHONG1 AND TU JIAOYANG （School of Computing, Zhejiang University of Tec
 
 #### 4. 未来可能的研究方向
 
-1. 评价体系的多样化和包含各种场景的测试集
+1. 评价体系的多样化和包含各种场景的数据集
 2. 需要找到一个可以用统一模型进行端到端训练和测试的并且满足实际应用的系统。
 
