@@ -6,7 +6,7 @@ RGBT目标跟踪是使可见光和热红外图像相融合，二者优势互补�
 
 模型的整体网络架构如下：
 
-![image-20230224104008496](E:\paper\paper_summary\image\image-APFnet.png)
+![image-20230224104008496](https://github.com/dongdong2061/paper_summary/blob/master/image/image-APFnet.png)
 
 首先，网络的backbone是由来自于VGG-M的第一个三层网络，卷积核大小分别是7x7，5x5，3x3。
 
@@ -32,7 +32,7 @@ RGBT目标跟踪是使可见光和热红外图像相融合，二者优势互补�
 
 3.根据已出现的attribute去增强特征，未出现的attribute则会被抑制
 
-未了解决上述问题，作者提出了一个三阶段训练方法：
+为了解决上述问题，作者提出了一个三阶段训练方法：
 
 1. train all attribute-sprcific fusion branch
    - 首先，这个双流CNN模型通过在imageNet-vid上进行模型参数预训练，包括分支结构、三个卷积层以及连个全连接层
