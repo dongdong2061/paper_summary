@@ -6,7 +6,7 @@ RGBT目标跟踪是使可见光和热红外图像相融合，二者优势互补�
 
 模型的整体网络架构如下：
 
-![image-20230224104008496](E:\paper\paper_summary\image\image-APFnet.png)
+![image-20230224104008496](https://github.com/dongdong2061/paper_summary/blob/master/image/image-APFnet.png)
 
 首先，网络的backbone是由来自于VGG-M的第一个三层网络，卷积核大小分别是7x7，5x5，3x3。
 
