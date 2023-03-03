@@ -32,7 +32,7 @@ RGBT目标跟踪是使可见光和热红外图像相融合，二者优势互补�
 
 3.根据已出现的attribute去增强特征，未出现的attribute则会被抑制
 
-未了解决上述问题，作者提出了一个三阶段训练方法：
+为了解决上述问题，作者提出了一个三阶段训练方法：
 
 1. train all attribute-sprcific fusion branch
    - 首先，这个双流CNN模型通过在imageNet-vid上进行模型参数预训练，包括分支结构、三个卷积层以及连个全连接层
