@@ -6,7 +6,7 @@ ICCV 2021  Zheng Li(杭州师范大学),Jingwen Ye(浙江大学),Mingli Song(浙
 
 FPD（Fast Human Pose Estimation. CVPR 19'）首先提出，利用传统的蒸馏(KD)方法，首先训一个8-stack HG作为teacher，选择一个4-stack HG作为student，然后进行KD。参考Fig. 1。
 
-![img](E:\paper\paper_summary\image\v2-8a2ccaf739bf3a7f986d35ff12e63d05_r.jpg)
+![img](https://github.com/dongdong2061/paper_summary/blob/master/image/v2-8a2ccaf739bf3a7f986d35ff12e63d05_r.jpg)
 
 这篇工作明显存在着几点问题：
 
@@ -20,7 +20,7 @@ FPD（Fast Human Pose Estimation. CVPR 19'）首先提出，利用传统的蒸�
 
 ### 2.解决思路
 
-![image-20230303102550981](E:\paper\paper_summary\image\image-20230303102550981.png)
+![image-20230303102550981](https://github.com/dongdong2061/paper_summary/blob/master/image/image-20230303102550981.png)
 
 **(1).** 我们提出了一个在线知识蒸馏的框架，即一个多分支结构。这里的teacher不是显式存在的，而是通过多个学生分支的结果经过了FAU的ensemble形成的，即established on the fly，我们利用ensemble得到的结果（拥有更高的准确率）来扮演teacher的角色，来KD每个的学生分支，即在Fig.2 (b)中的三个小分支。
 
@@ -38,7 +38,7 @@ FPD（Fast Human Pose Estimation. CVPR 19'）首先提出，利用传统的蒸�
 
 **(3).** 这里的FAU，即Feature Aggregation Unit，是用来对每个分支产生的结果进行一个带有weight的channel-wise的ensemble。即将每个heatmap按照生成的权重进行集成。具体的结构如下图所示。
 
-![image-20230303102853922](E:\paper\paper_summary\image\image-20230303102853922.png)
+![image-20230303102853922](https://github.com/dongdong2061/paper_summary/blob/master/image/image-20230303102853922.png)
 
 ### 3.总结与思考
 
