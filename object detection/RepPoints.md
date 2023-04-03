@@ -22,7 +22,7 @@ RepPoints 的训练由目标定位和识别共同驱动的，因此，RepPoints 
 
 性能最优的目标检测器通常遵循一个 multi-stage 的识别范式，其中目标定位是逐步细化的。其中，目标表示的角色如下：
 
-![img](https://pic4.zhimg.com/80/v2-e7d1addcb3d0c80813d18c0455972ad3_720w.webp)
+![img](https://github.com/dongdong2061/paper_summary/blob/master/image/reppoints.jpg)
 
 **RepPoints**
 
@@ -30,7 +30,7 @@ RepPoints 的训练由目标定位和识别共同驱动的，因此，RepPoints 
 
 为了克服上述限制，RepPoints 转而对一组自适应样本点进行建模：
 
-![image-20230402203008482](E:\paper\paper_summary\image\Reppoints)
+![image-20230402203008482](https://github.com/dongdong2061/paper_summary/blob/master/image/Reppoints)
 
 其中 n为表示中使用的样本点的总数。在这项工作中， n 默认设置为 9。
 
@@ -44,7 +44,7 @@ RepPoints 的学习是由目标定位损失和目标识别损失共同驱动的�
 
 目标表示的演化过程如下:
 
-![img](https://pic4.zhimg.com/80/v2-1ef144aa4c35ad23ebdd545e4d059f53_720w.webp)
+![img](https://github.com/dongdong2061/paper_summary/blob/master/image/v2-1ef144aa4c35ad23ebdd545e4d059f53_720w.webp)
 
 RepPoints Detector (RPDet) 由两个基于可变形卷积的识别阶段构成，如图所示。
 
