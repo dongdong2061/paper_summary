@@ -10,7 +10,7 @@
 
 本文提出了一种高效置换注意力(Shuffle Attention，SA)模块以解决上述问题，它采用置换单元高效组合上述两种类型的注意力机制。**具体的说，SA首先将输入沿着通道维度拆分为多组，然后对每一组特征词用置换单元刻画特征在空域与通道维度上的依赖性，最后所有特征进行集成并通过通道置换操作进行组件特征通信。**所提SA模块计算高效且有效，以ResNet50为蓝本，其参数增加为300(基准为25.56M)，计算量增加为2.76e-3GFLOPs(基准为4.12GFLOPs)，而top1精度提升则高达1.34%。
 
-![image-20230314164815598](E:\paper_summary\image\sanet.png)
+![image-20230314164815598](https://github.com/dongdong2061/paper_summary/blob/master/image/sanet.png)
 
 ```python
 class sa_layer(nn.Module):
